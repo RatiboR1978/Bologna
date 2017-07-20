@@ -414,7 +414,9 @@ textarea {
   font-style: normal; }
 
 body {
-  position: relative; }
+  position: relative;
+  font-family: quattrocento_sansregular, Arial, sans-serif;
+  font-size: 14px; }
 
 a {
   text-decoration: none; }
@@ -427,3 +429,125 @@ img {
   content: "";
   display: table;
   clear: both; }
+
+.page-header {
+  position: relative; }
+  .page-header h1 {
+    font-family: gildadisplay-regular-webfont, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px; }
+
+.page-header__text {
+  font-family: quattrocento_sansbold, Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #cccccc;
+  margin-top: 0;
+  text-transform: uppercase;
+  margin-bottom: 50px; }
+
+.page-header__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px; }
+
+.page-header__list {
+  margin: 3px 0 0 72px;
+  padding: 0; }
+  .page-header__list li {
+    display: inline-block;
+    margin-left: 15px; }
+
+.page-header__menu {
+  padding-top: 4px;
+  margin-left: 72px;
+  height: 16px; }
+  .page-header__menu a {
+    text-transform: uppercase;
+    font-family: quattrocento_sansbold, Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    margin-right: 40px; }
+
+.page-header__input {
+  border: 1px solid black;
+  outline: none;
+  margin-right: 15px;
+  padding-top: 0; }
+
+.page-header__form {
+  margin-right: 72px; }
+
+.page-header__search-submit {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+  cursor: pointer; }
+
+.page-header__search-submit::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url("../img/SVG/135-search.svg") no-repeat;
+  top: 2px;
+  left: 0; }
+
+.page-header__search-submit::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  border-left: 1px solid black;
+  top: 3px;
+  left: -15px;
+  background-color: #252525; }
+
+.page-header__text-block {
+  margin-top: -245px;
+  color: white; }
+
+.page-header__my-life {
+  width: 80px;
+  height: 26px;
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 100;
+  margin-bottom: 25px; }
+
+.page-header__my-life::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 26px;
+  background-color: red;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+
+.page-header__title {
+  font-family: rufina-bold-webfont, Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  max-width: 801px;
+  margin: 0 auto; }
+
+.page-header__img {
+  width: 100%;
+  height: 690px;
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover; }
