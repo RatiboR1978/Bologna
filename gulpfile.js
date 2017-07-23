@@ -17,14 +17,14 @@ gulp.task('sass', function(){ // Создаем таск Sass
         .pipe(plumber()) // Следим за ошибками
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-		.pipe(gulp.dest('css')) // Выгружаем результата в папку app/css
+		.pipe(gulp.dest('css')) // Выгружаем результата в папку css
 		.pipe(browserSync.stream()) // Обновляем CSS на странице при изменении
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
-			baseDir: '.' // Директория для сервера - app
+			baseDir: '.' // Директория для сервера - корневая
 		},
 		notify: false, // Отключаем уведомления
 		open: true,
@@ -39,14 +39,14 @@ gulp.task('scripts', function() {
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
-		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
+		.pipe(gulp.dest('js')); // Выгружаем в папку js
 });
 
 gulp.task('css-libs', ['sass'], function() {
 	return gulp.src('css/style.css') // Выбираем файл для минификации
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-		.pipe(gulp.dest('css')); // Выгружаем в папку app/css
+		.pipe(gulp.dest('css')); // Выгружаем в папку css
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
@@ -60,7 +60,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('img', function() {
-	return gulp.src('img/**/*') // Берем все изображения из app
+	return gulp.src('img/**/*') // Берем все изображения из img
 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
 			interlaced: true,
 			progressive: true,
