@@ -243,7 +243,7 @@
   position: relative;
 }
 
-.about__tag::before {
+.about__tag::after {
   content: '';
   position: absolute;
   width: 13px;
