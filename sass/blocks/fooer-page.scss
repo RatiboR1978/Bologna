@@ -1,0 +1,33 @@
+.fooer-page {
+  display: flex;
+  justify-content: center;
+}
+
+.fooer-page__copyright {
+  width: 50%;
+  padding-bottom: 70px;
+  padding-top: 60px;
+  text-align: right;
+  color: #898989;
+  p {
+    padding-right: 80px;
+    font-size: 11px;
+  }
+  h4 {
+    padding-right: 90px;
+  }
+}
+
+.fooer-page__nav {
+  width: 50%;
+  background: #ededeb;
+  padding-bottom: 70px;
+  padding-top: 90px;
+  nav {
+    padding-left: 90px;
+    a {
+      margin-right: 40px;
+      color: #898989;
+    }
+  }
+}
