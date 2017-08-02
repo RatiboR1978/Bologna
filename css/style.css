@@ -564,7 +564,7 @@ img {
 
 .page-content {
   margin-top: 185px;
-  margin-bottom: 200px; }
+  margin-bottom: 100px; }
 
 .page-content__wrapper {
   display: -webkit-box;
@@ -877,13 +877,6 @@ input[type='range']::-webkit-slider-thumb {
   width: 20px;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
-
-input[type='range']::-moz-slider-thumb {
-  -moz-appearance: none;
-  background: #b2ae7e;
-  height: 21px;
-  width: 20px;
-  border-radius: 50%; }
 
 .instagramm_img {
   display: -ms-grid;
