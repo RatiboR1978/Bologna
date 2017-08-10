@@ -448,6 +448,8 @@ img {
     font-size: 48px;
     text-align: center;
     margin-bottom: 10px; }
+  .page-header.page-header__nav-fixed {
+    padding-top: 84px; }
 
 .page-header__text {
   font-family: quattrocento_sansbold, Arial, sans-serif;
@@ -537,7 +539,8 @@ img {
   position: relative;
   margin: 0 auto;
   z-index: 100;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  cursor: pointer; }
 
 .page-header__my-life::before {
   content: "";
@@ -561,6 +564,16 @@ img {
   height: 690px;
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover; }
+
+.page-header__wrap-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background-color: white;
+  padding: 30px 0;
+  border-bottom: 1px solid black; }
 
 .page-content {
   margin-top: 185px;
