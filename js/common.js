@@ -6,7 +6,7 @@ $(function () {
         var instagramOffset = $('.instagram').offset().top;
 
         $('html, body').animate({
-            scrollTop: instagramOffset
+            scrollTop: instagramOffset - 300
         }, 500)
     })
 
