@@ -1,18 +1,13 @@
 .page-content {
-  margin-top: 185px;
+  margin-top: 215px;
   margin-bottom: 100px;
 }
 
 .page-content__wrapper{
-  display:flex;
-  flex-flow: column wrap;
-  align-content: space-between;
-  width: 830px;
-  height:3255px;
-  padding:30px;
+  width: 900px;
+
   .page-content__block{
     width:400px;
-    margin:0 0 30px 34px;
 
     img{
       width:100%;
@@ -70,4 +65,12 @@
   span {
     color: #898989;
   }
+}
+
+.page-content__read-more {
+  color: red;
+}
+
+.page-content__hidden {
+  display: none;
 }

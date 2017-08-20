@@ -27,7 +27,7 @@
         <a href="#">feautres</a>
         <a href="#">pages</a>
         <a href="#">categories</a>
-        <a href="#">contact</a>
+        <a id="contact" href="#">contact</a>
       </nav>
       <form class="page-header__form">
         <input class="page-header__input" type="text">
@@ -50,6 +50,15 @@
           <div class="page-content__content">
             <div class="page-content__link"><a href="#">Fashion</a></div>
             <h3>The Best Beauty Looks: Week of October 13, 2015</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised  words...</p>
+            <div class="page-content__time"><time>Dec 09 <span>/ 2015</span></time></div>
+          </div>
+        </div>
+        <div class="page-content__block">
+          <img src="img/img6.jpg">
+          <div class="page-content__content">
+            <div class="page-content__link"><a href="#">My life</a></div>
+            <h3>Quiz: What Kind of Gift Giver Are You?</h3>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words...</p>
             <div class="page-content__time"><time>Dec 09 <span>/ 2015</span></time></div>
           </div>
@@ -60,6 +69,15 @@
             <div class="page-content__link"><a href="#">Audio</a></div>
             <h3>Hugo- theme :If you love someone let them go</h3>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have ..</p>
+            <div class="page-content__time"><time>Dec 09 <span>/ 2015</span></time></div>
+          </div>
+        </div>
+        <div class="page-content__block">
+          <img src="img/img7.jpg">
+          <div class="page-content__content">
+            <div class="page-content__link"><a href="#">Fashion</a></div>
+            <h3>Yes, "Plus Privilege" Exists. Here's What It Is</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words...</p>
             <div class="page-content__time"><time>Dec 09 <span>/ 2015</span></time></div>
           </div>
         </div>
@@ -91,24 +109,6 @@
           </div>
         </div>
         <div class="page-content__block">
-          <img src="img/img6.jpg">
-          <div class="page-content__content">
-            <div class="page-content__link"><a href="#">My life</a></div>
-            <h3>Quiz: What Kind of Gift Giver Are You?</h3>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words...</p>
-            <div class="page-content__time"><time>Dec 09 <span>/ 2015</span></time></div>
-          </div>
-        </div>
-        <div class="page-content__block">
-          <img src="img/img7.jpg">
-          <div class="page-content__content">
-            <div class="page-content__link"><a href="#">Fashion</a></div>
-            <h3>Yes, "Plus Privilege" Exists. Here's What It Is</h3>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words...</p>
-            <div class="page-content__time"><time>Dec 09 <span>/ 2015</span></time></div>
-          </div>
-        </div>
-        <div class="page-content__block">
           <img src="img/img8.jpg">
           <div class="page-content__content">
             <div class="page-content__link"><a href="#">Fashion</a></div>
@@ -131,7 +131,7 @@
     <aside class="about">
       <div class="about__me">
         <img src="img/about.jpg" alt="about">
-        <span class="about__span-me">About me</span>
+        <a href="#popup-1" class="popup-linck"><span class="about__span-me">About me<span class="popup" id="popup-1">Some text popup</span></span></a>
         <h3>Mona-Kim</h3>
         <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" </p>
       </div>
@@ -222,6 +222,30 @@
       <div class="instagram__items instagram__item7"></div>
       <div class="instagram__items instagram__item8"></div>
     </div>
+    <!-- FAQ -->
+    <div class="container page-block">
+      <h2 class="title title_dark text-center">FAQ</h2>
+      <div class="faq">
+        <div class="faq__item">
+          <a href="#question-1" class="faq-title">Question 1</a>
+          <div class="faq-content" id="question-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt blanditiis quam ullam distinctio aliquid, ad aspernatur temporibus quis labore, est quidem voluptatum. Asperiores similique totam veritatis inventore velit distinctio, ullam!</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <a href="#question-2" class="faq-title">Question 2</a>
+          <div class="faq-content" id="question-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt blanditiis quam ullam distinctio aliquid, ad aspernatur temporibus quis labore, est quidem voluptatum. Asperiores similique totam veritatis inventore velit distinctio, ullam!</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <a href="#question-3" class="faq-title">Question 3</a>
+          <div class="faq-content" id="question-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt blanditiis quam ullam distinctio aliquid, ad aspernatur temporibus quis labore, est quidem voluptatum. Asperiores similique totam veritatis inventore velit distinctio, ullam!</p>
+          </div>
+        </div>
+      </div><!-- /.faq -->
+    </div><!-- /.container -->
   </section>
   <footer class="fooer-page">
     <div class="fooer-page__copyright">
@@ -237,6 +261,12 @@
       </nav>
     </div>
   </footer>
+  <!-- Modals -->
+  <div class="modal">
+    <h2>Modal Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aut officiis eaque itaque repudiandae nemo, ea praesentium ullam tempora nisi numquam harum accusamus nihil, animi iure minus quasi labore doloremque.</p>
+    <a href="#" class="btn btn_red">Close</a>
+  </div>
   <script src="js/libs.min.js"></script>
   <script src="js/common.js"></script>
 </body>

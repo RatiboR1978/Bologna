@@ -18,9 +18,14 @@
     line-height: 24px;
     color: #707070;
   }
+  a {
+    width: 82px;
+    display: block;
+  }
 }
 
 .about__span-me {
+  width: 150px;
   font-size: 13px;
   color: #898989;
   position: relative;
@@ -251,4 +256,35 @@
   background: url("../img/apsrf.png") no-repeat;
   top: -3px;
   right: -18px;
+}
+
+/* 16. Popup
+===========================*/
+
+.popup {
+  width: 97px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+  position: absolute;
+  left: 30%;
+  top: 148%;
+  z-index: 1;
+  margin-left: -75px;
+
+  display: none;
+
+  &:before {
+    content: "";
+    border-style: solid;
+    border-width: 0 5px 4px 5px;
+    border-color: transparent transparent black transparent;
+
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    z-index: 1;
+    margin-left: -3px;
+  }
 }

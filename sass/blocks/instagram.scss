@@ -82,4 +82,46 @@ input[type='range']::-webkit-slider-thumb {
   background-size: cover;
 }
 
+/* 15. FAQ
+===========================*/
+.title {
+  margin-top: 75px;
+  text-align: center;
+  font-family: rufina-bold-webfont, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.faq {
+  width: 600px;
+  margin: 30px auto;
+}
+
+.faq-title {
+  transition:background-color 0.2s;
+  display: block;
+  padding: 5px 10px;
+
+  color: #000;
+  text-decoration: none;
+  background-color: #eaeaea;
+  border-bottom: 1px solid black;
+
+  &:hover {
+    background-color: gainsboro;
+  }
+}
+
+.faq-content {
+  padding: 5px 10px;
+  display: none;
+}
+
+.page-block {
+  margin-bottom: 70px;
+}
+
+.active {
+
+}
 

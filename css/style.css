@@ -417,6 +417,9 @@ body {
   position: relative;
   font-family: quattrocento_sansregular, Arial, sans-serif;
   font-size: 14px; }
+  body.open-modal {
+    overflow-y: hidden;
+    padding-right: 17px; }
 
 a {
   text-decoration: none; }
@@ -576,28 +579,13 @@ img {
   border-bottom: 1px solid black; }
 
 .page-content {
-  margin-top: 185px;
+  margin-top: 215px;
   margin-bottom: 100px; }
 
 .page-content__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-align-content: space-between;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-  width: 830px;
-  height: 3255px;
-  padding: 30px; }
+  width: 900px; }
   .page-content__wrapper .page-content__block {
-    width: 400px;
-    margin: 0 0 30px 34px; }
+    width: 400px; }
     .page-content__wrapper .page-content__block img {
       width: 100%;
       display: block; }
@@ -643,6 +631,12 @@ img {
   .page-content__time span {
     color: #898989; }
 
+.page-content__read-more {
+  color: red; }
+
+.page-content__hidden {
+  display: none; }
+
 .about {
   margin-left: 120px;
   margin-top: 214px;
@@ -659,8 +653,12 @@ img {
     font-size: 13px;
     line-height: 24px;
     color: #707070; }
+  .about__me a {
+    width: 82px;
+    display: block; }
 
 .about__span-me {
+  width: 150px;
   font-size: 13px;
   color: #898989;
   position: relative;
@@ -861,6 +859,32 @@ img {
   top: -3px;
   right: -18px; }
 
+/* 16. Popup
+===========================*/
+.popup {
+  width: 97px;
+  padding: 5px;
+  background-color: black;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: white;
+  position: absolute;
+  left: 30%;
+  top: 148%;
+  z-index: 1;
+  margin-left: -75px;
+  display: none; }
+  .popup:before {
+    content: "";
+    border-style: solid;
+    border-width: 0 5px 4px 5px;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    z-index: 1;
+    margin-left: -3px; }
+
 .instagram__title {
   text-align: center;
   font-family: rufina-bold-webfont, Arial, sans-serif;
@@ -934,6 +958,38 @@ input[type='range']::-webkit-slider-thumb {
   background: url("../img/inst13.jpg") no-repeat;
   background-size: cover; }
 
+/* 15. FAQ
+===========================*/
+.title {
+  margin-top: 75px;
+  text-align: center;
+  font-family: rufina-bold-webfont, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 35px; }
+
+.faq {
+  width: 600px;
+  margin: 30px auto; }
+
+.faq-title {
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  background-color: #eaeaea;
+  border-bottom: 1px solid black; }
+  .faq-title:hover {
+    background-color: gainsboro; }
+
+.faq-content {
+  padding: 5px 10px;
+  display: none; }
+
+.page-block {
+  margin-bottom: 70px; }
+
 .fooer-page {
   display: -webkit-box;
   display: -webkit-flex;
@@ -966,3 +1022,37 @@ input[type='range']::-webkit-slider-thumb {
     .fooer-page__nav nav a {
       margin-right: 40px;
       color: #898989; }
+
+/* 14. Modals
+===========================*/
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
+.modal {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  z-index: 1000;
+  display: none; }
+
+.btn {
+  width: 91px;
+  height: 40px;
+  background-color: black;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 20px; }
