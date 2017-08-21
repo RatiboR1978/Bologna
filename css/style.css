@@ -916,46 +916,54 @@ input[type='range']::-webkit-slider-thumb {
           border-radius: 50%; }
 
 .instagramm_img {
-  display: -ms-grid;
-  display: grid;
-  grid-template-areas: "a b b c c d" "f b b g h i";
-  height: 599px; }
-
-.instagram__items {
-  min-height: 300px; }
+  width: 100%; }
 
 .instagram__item1 {
+  width: 16.7%;
+  height: 300px;
   background: url("../img/inst5.jpg") no-repeat;
   background-size: cover; }
 
 .instagram__item2 {
-  grid-area: b;
+  width: 33.3%;
+  height: 600px;
   background: url("../img/inst8.jpg") no-repeat;
   background-size: cover; }
 
 .instagram__item3 {
-  grid-area: c;
+  width: 33.3%;
+  height: 300px;
   background: url("../img/inst9.jpg") no-repeat;
   background-size: cover; }
 
 .instagram__item4 {
-  background: url("../img/inst12.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item5 {
-  background: url("../img/inst6.jpg") no-repeat;
-  background-size: cover; }
-
-.instagram__item6 {
+  width: 16.7%;
+  height: 300px;
   background: url("../img/inst10.jpg") no-repeat;
   background-size: cover; }
 
-.instagram__item7 {
+.instagram__item5 {
+  width: 16.7%;
+  height: 300px;
   background: url("../img/inst11.jpg") no-repeat;
   background-size: cover; }
 
-.instagram__item8 {
+.instagram__item6 {
+  width: 16.7%;
+  height: 300px;
+  background: url("../img/inst12.jpg") no-repeat;
+  background-size: cover; }
+
+.instagram__item7 {
+  width: 16.7%;
+  height: 300px;
   background: url("../img/inst13.jpg") no-repeat;
+  background-size: cover; }
+
+.instagram__item8 {
+  width: 16.7%;
+  height: 300px;
+  background: url("../img/inst6.jpg") no-repeat;
   background-size: cover; }
 
 /* 15. FAQ

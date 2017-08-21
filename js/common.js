@@ -86,13 +86,22 @@ $(function () {
         $('.popup').fadeOut();
     })
 
-    /* Masonry
+    /* Masonry content
      =========================*/
 
     $('.page-content__wrapper').masonry({
         itemSelector: '.page-content__block',
         columnWidth: 400,
         gutter: 40
+
+    });
+    /* Masonry instagram
+     =========================*/
+
+    $('.instagramm_img').masonry({
+        itemSelector: '.instagram__items',
+        columnWidth: 317
+
 
     });
     
